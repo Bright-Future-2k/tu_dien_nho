@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>từ điển</title>
+</head>
+<body>
+<form style="width:210px">
+    <h1>Dictionary</h1>
+    <input style="width: 200px" type="text" id="tViet"><br>
+    <hr>
+    <button type="button" onclick="change()">Change</button>
+</form>
+<script>
+  function change() {
+      let vnese = ["bút bi", "bút chì","thước kẻ","bảng" ];
+      let english = ["pen", "pencil","ruler", "board"];
+      let search = document.getElementById("tViet").value;
+      for (let i = 0; i < vnese.length; i++){
+          if (search==vnese[i]){
+              alert(english[i]);
+          }
+      }
+  }
+</script>
+</body>
+</html>
